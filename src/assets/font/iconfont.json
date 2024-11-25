@@ -1,0 +1,23 @@
+{
+  "id": "4757948",
+  "name": "校园二手教材拍卖系统",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "3176645",
+      "name": "GitHub",
+      "font_class": "GitHub",
+      "unicode": "ea0a",
+      "unicode_decimal": 59914
+    },
+    {
+      "icon_id": "10329742",
+      "name": "email",
+      "font_class": "email",
+      "unicode": "e62d",
+      "unicode_decimal": 58925
+    }
+  ]
+}
