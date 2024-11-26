@@ -30,7 +30,7 @@
       </van-button>
 
       <van-button type="primary">
-        <i class="iconfont icon-GitHub"></i>
+        <i class="iconfont icon-github"></i>
       </van-button>
     </div>
 
