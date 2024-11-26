@@ -30,4 +30,5 @@ pnpm run build
 
 1. 项目成员，从dev分支切出自己的分支，开发完成后，提交PR到dev分支
 
-2. 非项目成员，fork项目，git clone自己仓库里面fork的项目，完成开发后，提交PR到本仓库
+2. 非项目成员，fork项目，git clone自己仓库里面fork的项目，完成开发后，提交PR到本仓库12
+
