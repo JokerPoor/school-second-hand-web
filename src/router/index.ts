@@ -5,7 +5,7 @@ import { afterNav, beforeNav } from './navigate';
 export const routes: RouteRecordRaw[] = [
 	{
 		path: '/',
-		redirect: '/login-register',
+		redirect: '/toolbar-menu',
 	},
 	{
 		path: '/login-register',
@@ -16,6 +16,58 @@ export const routes: RouteRecordRaw[] = [
 			title: 'login-register',
 			transition: 'van-fade',
 		},
+	},
+	{
+		path: '/toolbar-menu',
+		name: 'ToolbarMenu',
+		component: () => import('@/pages/toolbar-menu/index.vue'),
+		meta: {
+			keepAlive: false,
+			title: 'toolbar-menu',
+			transition: 'van-fade',
+		},
+		children:[
+			{
+				path: 'personal-center',
+				name: 'PersonalCenter',
+				component: () => import('@/pages/toolbar-menu/route-page/personal-center/index.vue'),
+				meta: {
+					keepAlive: false,
+					title: 'personal-center',
+					transition: 'van-fade',
+				}
+			},
+			{
+				path: 'home',
+				name: 'Home',
+				component: () => import('@/pages/toolbar-menu/route-page/home/index.vue'),
+				meta: {
+					keepAlive: false,
+					title: 'home',
+					transition: 'van-fade',
+				}
+			},
+			{
+				path: 'collection',
+				name: 'Collection',
+				component: () => import('@/pages/toolbar-menu/route-page/collection/index.vue'),
+				meta: {
+					keepAlive: false,
+					title: 'collection',
+					transition: 'van-fade',
+				}
+			},
+			{
+				path: 'chat',
+				name: 'Chat',
+				component: () => import('@/pages/toolbar-menu/route-page/chat/index.vue'),
+				meta: {
+					keepAlive: false,
+					title: 'chat',
+					transition: 'van-fade',
+				}
+			}
+		]
 	},
 	{
 		path: '/:pathMatch(.*)*',

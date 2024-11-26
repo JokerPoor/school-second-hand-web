@@ -1,14 +1,119 @@
 {
   "id": "4757948",
-  "name": "校园二手教材拍卖系统",
+  "name": "拍卖系统",
   "font_family": "iconfont",
   "css_prefix_text": "icon-",
   "description": "",
   "glyphs": [
     {
+      "icon_id": "663143",
+      "name": "home",
+      "font_class": "home",
+      "unicode": "e60a",
+      "unicode_decimal": 58890
+    },
+    {
+      "icon_id": "4114020",
+      "name": "collection",
+      "font_class": "collection",
+      "unicode": "e682",
+      "unicode_decimal": 59010
+    },
+    {
+      "icon_id": "16618014",
+      "name": "chat",
+      "font_class": "chat",
+      "unicode": "e69d",
+      "unicode_decimal": 59037
+    },
+    {
+      "icon_id": "17412543",
+      "name": "person",
+      "font_class": "person",
+      "unicode": "e6bb",
+      "unicode_decimal": 59067
+    },
+    {
+      "icon_id": "42608185",
+      "name": "person-copy",
+      "font_class": "person-copy",
+      "unicode": "ea0b",
+      "unicode_decimal": 59915
+    },
+    {
+      "icon_id": "42608193",
+      "name": "chat-copy",
+      "font_class": "chat-copy",
+      "unicode": "ea0c",
+      "unicode_decimal": 59916
+    },
+    {
+      "icon_id": "42608195",
+      "name": "collection-copy",
+      "font_class": "collection-copy",
+      "unicode": "ea0d",
+      "unicode_decimal": 59917
+    },
+    {
+      "icon_id": "42608203",
+      "name": "home-copy",
+      "font_class": "home-copy",
+      "unicode": "ea0e",
+      "unicode_decimal": 59918
+    },
+    {
+      "icon_id": "840759",
+      "name": "user",
+      "font_class": "user",
+      "unicode": "e65c",
+      "unicode_decimal": 58972
+    },
+    {
+      "icon_id": "938875",
+      "name": "comment",
+      "font_class": "comment",
+      "unicode": "e624",
+      "unicode_decimal": 58916
+    },
+    {
+      "icon_id": "5589027",
+      "name": "add",
+      "font_class": "add",
+      "unicode": "e62b",
+      "unicode_decimal": 58923
+    },
+    {
+      "icon_id": "8760107",
+      "name": "logout",
+      "font_class": "logout",
+      "unicode": "e635",
+      "unicode_decimal": 58933
+    },
+    {
+      "icon_id": "35496521",
+      "name": "organizations",
+      "font_class": "organizations",
+      "unicode": "e60c",
+      "unicode_decimal": 58892
+    },
+    {
+      "icon_id": "42229883",
+      "name": "auction-line",
+      "font_class": "auction-line",
+      "unicode": "e7ac",
+      "unicode_decimal": 59308
+    },
+    {
+      "icon_id": "42609592",
+      "name": "add-light",
+      "font_class": "add-light",
+      "unicode": "ea0f",
+      "unicode_decimal": 59919
+    },
+    {
       "icon_id": "3176645",
-      "name": "GitHub",
-      "font_class": "GitHub",
+      "name": "github",
+      "font_class": "github",
       "unicode": "ea0a",
       "unicode_decimal": 59914
     },

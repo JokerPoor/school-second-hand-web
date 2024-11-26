@@ -8,6 +8,7 @@ export {}
 declare module 'vue' {
   export interface GlobalComponents {
     FloatingPanelFunctional: typeof import('./src/components/floating-panel-functional/index.vue')['default']
+    LayoutPage: typeof import('./src/components/layout-page/index.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
     VanButton: typeof import('vant/es')['Button']
@@ -16,5 +17,7 @@ declare module 'vue' {
     VanField: typeof import('vant/es')['Field']
     VanFloatingPanel: typeof import('vant/es')['FloatingPanel']
     VanOverlay: typeof import('vant/es')['Overlay']
+    VanTabbar: typeof import('vant/es')['Tabbar']
+    VanTabbarItem: typeof import('vant/es')['TabbarItem']
   }
 }
