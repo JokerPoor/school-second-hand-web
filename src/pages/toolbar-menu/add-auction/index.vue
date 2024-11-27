@@ -1,7 +1,7 @@
 <template>
   <div class="add-auction p-2 bg-white rounded-[50%]">
     <van-button round type="primary" @click="addAuctionHandle">
-      <i class="iconfont icon-add-light"></i>
+      <i class="iconfont icon-add"></i>
     </van-button>
   </div>
 </template>
