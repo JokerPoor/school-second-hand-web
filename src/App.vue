@@ -1,27 +1,30 @@
 <template>
-  <van-config-provider
-    :theme-vars="{ primaryColor: '#121212' }"
-    theme-vars-scope="global"
-  >
-    <router-view v-slot="{ Component }" class="app-router-view">
-      <transition :name="String($route.meta.transition ?? '')">
-        <keep-alive :include="keepAliveRoutes">
-          <component :is="Component" />
-        </keep-alive>
-      </transition>
-    </router-view>
+  <layout-page>
+    <van-config-provider
+      :theme-vars="{ primaryColor: '#121212' }"
+      theme-vars-scope="global"
+    >
+      <router-view v-slot="{ Component }">
+        <transition :name="String($route.meta.transition ?? '')">
+          <keep-alive :include="keepAliveRoutes">
+            <component :is="Component" />
+          </keep-alive>
+        </transition>
+      </router-view>
 
-    <van-overlay :show="show" z-index="10000" @click="closeAxiosLoading">
-      <div class="wrapper" @click.stop>
-        <img src="@/assets/img/page-loading.gif" class="w-screen" />
-      </div>
-    </van-overlay>
-  </van-config-provider>
+      <van-overlay :show="show" z-index="10000" @click="closeAxiosLoading">
+        <div class="wrapper" @click.stop>
+          <img src="@/assets/img/page-loading.gif" class="w-screen" />
+        </div>
+      </van-overlay>
+    </van-config-provider>
+  </layout-page>
 </template>
 
 <script setup lang="ts">
 import { keepAliveRoutes } from "@/router";
 import { show, closeAxiosLoading } from "@/hooks/useAxiosLoading";
+import LayoutPage from "@/components/layout-page/index.vue";
 </script>
 
 

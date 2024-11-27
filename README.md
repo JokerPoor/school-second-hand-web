@@ -1,5 +1,33 @@
-# Vue 3 + TypeScript + Vite
+## 环境说明
 
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+node v18.12.0
 
-Learn more about the recommended Project Setup and IDE Support in the [Vue Docs TypeScript Guide](https://vuejs.org/guide/typescript/overview.html#project-setup).
+## 安装与启动
+
+### 安装依赖
+
+```bash
+pnpm install
+```
+
+### 启动项目
+
+```bash
+pnpm run dev
+```
+
+### 打包项目
+
+```bash
+pnpm run build
+```
+
+## 项目结构
+
+## 功能说明
+
+## 如何参与
+
+1. 项目成员，从dev分支切出自己的分支，开发完成后，提交PR到dev分支
+
+2. 非项目成员，fork项目，git clone自己仓库里面fork的项目，完成开发后，提交PR到本仓库

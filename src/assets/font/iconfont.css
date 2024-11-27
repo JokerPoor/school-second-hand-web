@@ -1,8 +1,9 @@
 @font-face {
-  font-family: "iconfont"; /* Project id 4757948 */
-  src: url('iconfont.woff2?t=1732462094980') format('woff2'),
-       url('iconfont.woff?t=1732462094980') format('woff'),
-       url('iconfont.ttf?t=1732462094980') format('truetype');
+  font-family: "iconfont";
+  /* Project id 4757948 */
+  src: url('iconfont.woff2?t=1732610108770') format('woff2'),
+    url('iconfont.woff?t=1732610108770') format('woff'),
+    url('iconfont.ttf?t=1732610108770') format('truetype');
 }
 
 .iconfont {
@@ -13,11 +14,70 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-GitHub:before {
+.icon-home:before {
+  content: "\e60a";
+}
+
+.icon-collection:before {
+  content: "\e682";
+}
+
+.icon-chat:before {
+  content: "\e69d";
+}
+
+.icon-person:before {
+  content: "\e6bb";
+}
+
+.icon-person-copy:before {
+  content: "\ea0b";
+}
+
+.icon-chat-copy:before {
+  content: "\ea0c";
+}
+
+.icon-collection-copy:before {
+  content: "\ea0d";
+}
+
+.icon-home-copy:before {
+  content: "\ea0e";
+}
+
+.icon-user:before {
+  content: "\e65c";
+}
+
+.icon-comment:before {
+  content: "\e624";
+}
+
+.icon-add:before {
+  content: "\e62b";
+}
+
+.icon-logout:before {
+  content: "\e635";
+}
+
+.icon-organizations:before {
+  content: "\e60c";
+}
+
+.icon-auction-line:before {
+  content: "\e7ac";
+}
+
+.icon-add-light:before {
+  content: "\ea0f";
+}
+
+.icon-github:before {
   content: "\ea0a";
 }
 
 .icon-email:before {
   content: "\e62d";
 }
-
