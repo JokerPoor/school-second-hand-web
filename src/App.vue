@@ -4,7 +4,7 @@
       :theme-vars="{ primaryColor: '#121212' }"
       theme-vars-scope="global"
     >
-      <router-view v-slot="{ Component }" class="app-router-view">
+      <router-view v-slot="{ Component }">
         <transition :name="String($route.meta.transition ?? '')">
           <keep-alive :include="keepAliveRoutes">
             <component :is="Component" />

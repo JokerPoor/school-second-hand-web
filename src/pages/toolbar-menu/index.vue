@@ -1,7 +1,7 @@
 <template>
   <div class="toolbar-menu">
     <div class="toolbar-menu__content">
-      <router-view v-slot="{ Component }" class="app-router-view">
+      <router-view v-slot="{ Component }">
         <transition :name="String($route.meta.transition ?? '')">
           <keep-alive :include="keepAliveRoutes">
             <component :is="Component" />
@@ -9,7 +9,8 @@
         </transition>
       </router-view>
     </div>
-    <div class="relative toolbar-menu__footer">
+
+    <div class="toolbar-menu__footer">
       <add-auction class="absolute toolbar-menu__footer__add"></add-auction>
       <van-tabbar route>
         <van-tabbar-item replace to="/toolbar-menu/home">
@@ -52,13 +53,18 @@ import AddAuction from "./add-auction/index.vue";
 <style scoped lang="scss">
 .toolbar-menu__content {
   min-height: calc(100vh - var(--van-tabbar-height));
-  overflow: auto;
+  overflow-y: scroll;
+  padding-bottom: var(--van-tabbar-height);
 }
 
 .toolbar-menu__footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
   .toolbar-menu__footer__add {
     z-index: calc(var(--van-tabbar-z-index) + 1);
-    top: calc(var(--van-tabbar-height) / -2);
+    top: calc(var(--van-tabbar-height) * -1.5);
     left: 50%;
     transform: translate(-50%);
   }

@@ -11,5 +11,6 @@
 .layout-page {
   min-height: 100vh;
   background-color: #121212;
+  color: white;
 }
 </style>
