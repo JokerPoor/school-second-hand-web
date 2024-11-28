@@ -12,7 +12,9 @@ export default () => {
             },
           },
           slots: {
-            default: () => h(RegisterModal, {}),
+            default: () => h(RegisterModal, {
+              close: () => popup.close()
+            }),
           },
         });
       }

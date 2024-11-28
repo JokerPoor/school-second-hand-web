@@ -1,7 +1,7 @@
 <template>
   <div class="register-modal flex flex-col items-center">
-    <div class="register-title font-bold text-4xl">Create</div>
-    <div class="register-title font-bold text-4xl">an Account</div>
+    <div class="font-bold text-4xl">Create</div>
+    <div class="font-bold text-4xl">an Account</div>
 
     <register-page-avator-svg class="mt-2" />
 
@@ -24,10 +24,4 @@ import RegisterPageAvatorSvg from "@/assets/svg/register-page-avator.svg";
 </script>
 
 <style scoped lang="scss">
-.register-modal {
-  .register-title {
-    font-family: "Caveat", cursive;
-    font-optical-sizing: auto;
-  }
-}
 </style>
