@@ -8,6 +8,10 @@ export const routes: RouteRecordRaw[] = [
 		redirect: '/toolbar-menu',
 	},
 	{
+		path: '/detail',
+		component: () => import('@/pages/goodsDetail/index.vue')
+	},
+	{
 		path: '/login-register',
 		name: 'LoginRegister',
 		component: () => import('@/pages/login-register/index.vue'),
@@ -26,7 +30,7 @@ export const routes: RouteRecordRaw[] = [
 			title: 'toolbar-menu',
 			transition: 'van-fade',
 		},
-		children:[
+		children: [
 			{
 				path: 'personal-center',
 				name: 'PersonalCenter',
