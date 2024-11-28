@@ -1,6 +1,6 @@
 <template>
   <div class="personal-center">
-    <div class="flex justify-end m-6">
+    <div class="flex justify-end m-6" @click="logoutHandle">
       <i class="iconfont icon-logout"></i>
     </div>
 
@@ -76,50 +76,40 @@
 
   <p class="ml-2 my-6 font-extrabold text-2xl">Temporary</p>
 
-  <van-list v-model:loading="loading" :finished="finished" @load="onLoad">
-    <div class="flex items-center flex-col">
-      <div
-        class="rounded-2xl bg-white text-black mb-2 w-80"
-        v-for="item in list"
-        :key="item"
-      >
+  <Carousel v-bind="config">
+    <Slide v-for="slide in 10" :key="slide">
+      <div class="rounded-2xl bg-white text-black mb-2">
         <van-image
           fit="contain"
-          width="20rem"
-          height="10rem"
           src="https://fastly.jsdelivr.net/npm/@vant/assets/cat.jpeg"
         />
         <div class="h-10">
-          <span>热卖</span>
-          <span>00:52:00</span>
+          <van-tag type="primary">热卖</van-tag>
+          <span class="font-extrabold text-2xl ml-6">00:52:00</span>
         </div>
       </div>
-    </div>
-  </van-list>
+    </Slide>
+  </Carousel>
 </template>
 
 <script setup lang="ts">
-const list = ref([]);
-const loading = ref(false);
-const finished = ref(false);
+import { useRouter } from "vue-router";
+import { Carousel, Slide } from "vue3-carousel";
+import "vue3-carousel/dist/carousel.css";
 
-const onLoad = () => {
-  // 异步更新数据
-  // setTimeout 仅做示例，真实场景中一般为 ajax 请求
-  setTimeout(() => {
-    for (let i = 0; i < 10; i++) {
-      list.value.push(list.value.length + 1);
-    }
-
-    // 加载状态结束
-    loading.value = false;
-
-    // 数据全部加载完成
-    if (list.value.length >= 40) {
-      finished.value = true;
-    }
-  }, 1000);
+const config = {
+  autoplay: 2000,
+  wrapAround: true,
+  pauseAutoplayOnHover: true,
 };
+
+const router = useRouter();
+
+function logoutHandle() {
+  router.replace({
+    name: "LoginRegister",
+  });
+}
 </script>
 
 <style scoped lang="scss">

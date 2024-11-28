@@ -1,6 +1,12 @@
 import PopupFunctional from '@/components/floating-panel-functional/index.vue';
 import { render, StyleValue, VNode } from 'vue';
 
+export interface UsePopupInstance {
+	close: () => void;
+	heddle: () => void;
+	show: () => void;
+}
+
 export default <T = object>(options: {
 	props?: {
 		style?: StyleValue;
@@ -8,11 +14,7 @@ export default <T = object>(options: {
 	slots?: {
 		[key: string]: () => VNode | VNode[] | undefined;
 	};
-}): {
-	close: () => void;
-	heddle: () => void;
-	show: () => void;
-} => {
+}): UsePopupInstance => {
 	const container = document.createElement('div');
 	const vNode = h<object>(PopupFunctional, { ...(options.props ?? {}), container }, options.slots ?? {});
 	document.body.appendChild(container);

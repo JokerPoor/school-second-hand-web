@@ -27,7 +27,7 @@ export default defineConfig({
       scss: {
         javascriptEnabled: true,
         additionalData:
-          '@use "./src/assets/style/variable.scss"; @use "./src/assets/style/mixins.scss"; @use "./src/assets/style/scroll.scss";',
+          '@use "./src/assets/style/variable.scss"; @use "./src/assets/style/mixins.scss"; @use "./src/assets/style/scroll.scss"; @use "./src/assets/style/global.scss";',
       },
       postcss: {
         plugins: [tailWindCss, autoprefixer],

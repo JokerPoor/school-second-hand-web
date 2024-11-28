@@ -27,7 +27,10 @@ function openLoginModal() {
       },
     },
     slots: {
-      default: () => h(LoginModal, {}),
+      default: () =>
+        h(LoginModal, {
+          close: () => popup.close(),
+        }),
     },
   });
 }

@@ -6,6 +6,48 @@
   "description": "",
   "glyphs": [
     {
+      "icon_id": "30585431",
+      "name": "submit",
+      "font_class": "submit",
+      "unicode": "e688",
+      "unicode_decimal": 59016
+    },
+    {
+      "icon_id": "13037228",
+      "name": "price",
+      "font_class": "price",
+      "unicode": "e6a0",
+      "unicode_decimal": 59040
+    },
+    {
+      "icon_id": "1794858",
+      "name": "next-step",
+      "font_class": "next-step",
+      "unicode": "e70e",
+      "unicode_decimal": 59150
+    },
+    {
+      "icon_id": "18661276",
+      "name": "previous_step",
+      "font_class": "previous_step",
+      "unicode": "e659",
+      "unicode_decimal": 58969
+    },
+    {
+      "icon_id": "27302212",
+      "name": "time-steps",
+      "font_class": "time-steps",
+      "unicode": "e615",
+      "unicode_decimal": 58901
+    },
+    {
+      "icon_id": "248913",
+      "name": "camera",
+      "font_class": "camera",
+      "unicode": "e658",
+      "unicode_decimal": 58968
+    },
+    {
       "icon_id": "663143",
       "name": "home",
       "font_class": "home",
@@ -102,13 +144,6 @@
       "font_class": "auction-line",
       "unicode": "e7ac",
       "unicode_decimal": 59308
-    },
-    {
-      "icon_id": "42609592",
-      "name": "add-light",
-      "font_class": "add-light",
-      "unicode": "ea0f",
-      "unicode_decimal": 59919
     },
     {
       "icon_id": "3176645",

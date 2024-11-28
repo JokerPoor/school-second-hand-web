@@ -10,10 +10,12 @@
   },
   "dependencies": {
     "@vant/use": "^1.6.0",
+    "md-editor-v3": "^5.0.2",
     "normalize.css": "^8.0.1",
     "vant": "^4.9.9",
     "vue": "^3.5.12",
-    "vue-router": "^4.0.14"
+    "vue-router": "^4.0.14",
+    "vue3-carousel": "^0.8.1"
   },
   "devDependencies": {
     "@types/node": "^22.9.3",

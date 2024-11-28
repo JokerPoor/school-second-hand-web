@@ -1,6 +1,6 @@
 <template>
   <div class="login-modal flex flex-col items-center">
-    <div class="welcome-title font-bold text-4xl">Welcome back!</div>
+    <div class="font-bold text-4xl">Welcome back!</div>
 
     <login-page-avator-svg class="mt-2" />
 
@@ -36,7 +36,7 @@
 
     <div class="text-align text-black mt-6 mb-24">
       Don't have an account?
-      <span class="font-bold" @click="openRegisterModal">Sign up</span>
+      <span class="font-bold" @click="registerHandle">Sign up</span>
     </div>
   </div>
 </template>
@@ -46,8 +46,21 @@ import useRegisterHook from "../../hooks/useRegister";
 import LoginPageAvatorSvg from "@/assets/svg/login-page-avator.svg";
 import { closeAxiosLoading, openAxiosLoading } from "@/hooks/useAxiosLoading";
 import { FieldType } from "vant";
+import router from "@/router/index";
+
+const props = withDefaults(
+  defineProps<{
+    close: () => void;
+  }>(),
+  {}
+);
 
 const { openRegisterModal } = useRegisterHook();
+
+function registerHandle() {
+  openRegisterModal();
+  props.close();
+}
 
 const passwordType = ref<FieldType>("password");
 
@@ -63,15 +76,13 @@ function onSubmit() {
   openAxiosLoading();
   setTimeout(() => {
     closeAxiosLoading();
+    router.replace({
+      name: "Home",
+    });
+    props.close();
   }, 3000);
 }
 </script>
 
 <style scoped lang="scss">
-.login-modal {
-  .welcome-title {
-    font-family: "Caveat", cursive;
-    font-optical-sizing: auto;
-  }
-}
 </style>
