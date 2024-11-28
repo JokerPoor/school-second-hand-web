@@ -1,9 +1,8 @@
 @font-face {
-  font-family: "iconfont";
-  /* Project id 4757948 */
-  src: url('iconfont.woff2?t=1732610108770') format('woff2'),
-    url('iconfont.woff?t=1732610108770') format('woff'),
-    url('iconfont.ttf?t=1732610108770') format('truetype');
+  font-family: "iconfont"; /* Project id 4757948 */
+  src: url('iconfont.woff2?t=1732779408300') format('woff2'),
+       url('iconfont.woff?t=1732779408300') format('woff'),
+       url('iconfont.ttf?t=1732779408300') format('truetype');
 }
 
 .iconfont {
@@ -12,6 +11,30 @@
   font-style: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-submit:before {
+  content: "\e688";
+}
+
+.icon-price:before {
+  content: "\e6a0";
+}
+
+.icon-next-step:before {
+  content: "\e70e";
+}
+
+.icon-previous_step:before {
+  content: "\e659";
+}
+
+.icon-time-steps:before {
+  content: "\e615";
+}
+
+.icon-camera:before {
+  content: "\e658";
 }
 
 .icon-home:before {
@@ -70,10 +93,6 @@
   content: "\e7ac";
 }
 
-.icon-add-light:before {
-  content: "\ea0f";
-}
-
 .icon-github:before {
   content: "\ea0a";
 }
@@ -81,3 +100,4 @@
 .icon-email:before {
   content: "\e62d";
 }
+

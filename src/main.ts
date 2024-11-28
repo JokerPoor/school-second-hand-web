@@ -30,7 +30,6 @@ import 'vant/es/image-preview/style';
 
 import { Loading } from 'vant';
 
-
 const app = createApp(App)
 
 app.use(Loading);

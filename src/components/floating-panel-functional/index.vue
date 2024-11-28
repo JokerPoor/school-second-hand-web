@@ -19,7 +19,6 @@ const { height } = useWindowSize();
 const anchors = [
   0,
   Math.round(0.3 * height.value),
-  Math.round(0.6 * height.value),
   Math.round(0.9 * height.value),
 ];
 
