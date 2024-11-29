@@ -8,10 +8,6 @@ export const routes: RouteRecordRaw[] = [
 		redirect: '/toolbar-menu',
 	},
 	{
-		path: '/detail',
-		component: () => import('@/pages/goodsDetail/index.vue')
-	},
-	{
 		path: '/login-register',
 		name: 'LoginRegister',
 		component: () => import('@/pages/login-register/index.vue'),
@@ -72,6 +68,26 @@ export const routes: RouteRecordRaw[] = [
 				}
 			}
 		]
+	},
+	{
+		path: '/auction-detail',
+		name: 'AuctionDetail',
+		component: () => import('@/pages/auction-detail/index.vue'),
+		meta: {
+			keepAlive: false,
+			title: 'auction-detail',
+			transition: 'van-fade',
+		},
+	},
+	{
+		path: '/auction-manage',
+		name: 'AuctionManage',
+		component: () => import('@/pages/auction-manage/index.vue'),
+		meta: {
+			keepAlive: false,
+			title: 'auction-manage',
+			transition: 'van-fade',
+		},
 	},
 	{
 		path: '/:pathMatch(.*)*',

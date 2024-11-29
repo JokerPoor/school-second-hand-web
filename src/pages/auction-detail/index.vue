@@ -9,14 +9,16 @@
       </div>
     </div>
     <div>
-      <van-image src="https://fastly.jsdelivr.net/npm/@vant/assets/cat.jpeg"></van-image>
+      <van-image
+        src="https://fastly.jsdelivr.net/npm/@vant/assets/cat.jpeg"
+      ></van-image>
     </div>
     <div class="content">
       <h2>Hachiman no Hogo</h2>
       <p>Tosei-gusoku Samurai Armour</p>
       <div class="badge">#0123</div>
       <div class="stars">
-        <van-rate color="#000" v-model="starValue"></van-rate>
+        <van-rate color="#000" :model-value="3"></van-rate>
       </div>
       <div class="timer">01:36:18</div>
 
@@ -30,7 +32,6 @@
 </template>
 
 <script setup lang="ts">
-const starValue = ref(3)
 </script>
 
 <style scoped>

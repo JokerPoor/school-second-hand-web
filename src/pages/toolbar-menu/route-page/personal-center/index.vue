@@ -65,6 +65,7 @@
 
       <div
         class="bg-white manage-module-item rounded-3xl flex justify-center items-center"
+        @click="$router.push({ name: 'AuctionManage' })"
       >
         <div class="flex flex-col items-center">
           <i class="iconfont icon-auction-line manage-module-item_icon"></i>

@@ -6,6 +6,34 @@
   "description": "",
   "glyphs": [
     {
+      "icon_id": "3106398",
+      "name": "eye",
+      "font_class": "eye",
+      "unicode": "e608",
+      "unicode_decimal": 58888
+    },
+    {
+      "icon_id": "2142865",
+      "name": "search",
+      "font_class": "search",
+      "unicode": "e6b7",
+      "unicode_decimal": 59063
+    },
+    {
+      "icon_id": "949533",
+      "name": "back",
+      "font_class": "back",
+      "unicode": "e601",
+      "unicode_decimal": 58881
+    },
+    {
+      "icon_id": "58542",
+      "name": "calendar",
+      "font_class": "calendar",
+      "unicode": "e625",
+      "unicode_decimal": 58917
+    },
+    {
       "icon_id": "30585431",
       "name": "submit",
       "font_class": "submit",
