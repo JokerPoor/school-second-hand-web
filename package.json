@@ -4,13 +4,15 @@
   "version": "0.0.0",
   "type": "commonjs",
   "scripts": {
-    "dev": "vite",
-    "build": "vue-tsc -b && vite build",
+    "dev": "vite --mode development",
+    "build:dev": "cross-env NODE_OPTIONS=--max-old-space-size=8192 vite --mode development build",
+    "build:build": "cross-env NODE_OPTIONS=--max-old-space-size=8192 vite --mode build build",
     "preview": "vite preview"
   },
   "dependencies": {
     "@vant/use": "^1.6.0",
     "@vant/weapp": "^1.11.7",
+    "axios": "^1.7.9",
     "md-editor-v3": "^5.0.2",
     "normalize.css": "^8.0.1",
     "vant": "^4.9.9",

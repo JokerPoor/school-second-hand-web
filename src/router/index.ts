@@ -26,6 +26,7 @@ export const routes: RouteRecordRaw[] = [
 			title: 'toolbar-menu',
 			transition: 'van-fade',
 		},
+		redirect: '/toolbar-menu/home',
 		children: [
 			{
 				path: 'personal-center',
